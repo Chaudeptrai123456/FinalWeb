@@ -1,0 +1,70 @@
+.login-background{
+    background: linear-gradient(135deg, rgba(34,193,195,1) 0%,     rgba(253,187,45,1) 100%);
+    height: 100vh;  
+    .login-container{
+        height: 100%;
+        width: 400px;
+        margin : 0 auto;
+        border-radius: 10px;
+        background-color: white;
+        border-radius: 30px;
+
+        .login-content.row{
+            padding:35px;
+            .text-center-login{
+                text-align: center;
+                font-weight: 600;
+                font-size: 40px;
+                padding-top: 15px;
+                
+            }
+            .button-login {
+                height: 30px;
+                border-radius: 15px;
+                outline: none;
+                border: none;
+                width: 390px;
+                background: linear-gradient(135deg, rgba(34,193,195,1) 0%,     rgba(253,187,45,1) 100%);
+                color: white;
+                font-size: 18px;
+            }
+            .login-input{
+                margin: 10px 10px;
+                .class-control   {
+                    border-radius: 10px;
+                    height: 38px;
+                }
+            }
+            .iconmeidasocial {
+                display: flex;
+                text-align: center;
+                justify-content: center;
+
+                font-size: 35px;
+                    .fab.fa-google-plus-g {
+                        border-radius: 50%;
+                        height:50px;
+                        width: 50px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        background-color: #c32424;
+                        color: white;
+                    }
+                    .fab.fa-facebook-f {
+                        border-radius: 50%;
+                        height:50px;
+                        width: 50px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        background-color: #0985fa;
+                        color: white;
+                    }
+                 
+                   
+               
+            }
+        }
+    }  
+}
