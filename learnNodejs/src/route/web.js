@@ -1,5 +1,5 @@
 import express from"express"
- 
+ import usercontroller from "../controller/usercontroller"
 import homepage from "../controller/hometroller"
 let router = express.Router();
 
@@ -19,6 +19,10 @@ let initwebroute = (app) =>{
     router.post("/crud/updateuser",homepage.updateinformationofuser)
     ///crud/delete?id=<%= datatable[i].id%>
     router.get("/crud/delete",homepage.deleteuserbyid)
+
+    router.post("/api/login",usercontroller.handlelogin)
+
+
 
     return app.use("/",router);
 }
