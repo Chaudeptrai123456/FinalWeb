@@ -12,7 +12,7 @@ class Login extends Component {
         super(props);
         this.state = {
             email:'',
-            isshowpassword:false,
+            isshowpassword:true,
             password:''
         }
     }
@@ -30,7 +30,12 @@ class Login extends Component {
     }
      
     handlelogin = async()=>{
-         await handlelogin(this.state.email,this.state.password)
+        try {
+            await handlelogin(this.state.email,this.state.password)
+
+        } catch(e) {
+            
+        }
     }
 
 
